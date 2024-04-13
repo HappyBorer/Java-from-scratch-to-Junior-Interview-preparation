@@ -1,0 +1,21 @@
+package oop.keywords_of_static_and_final_and_variable_lengths;
+
+public class MyMath {
+    public static final double PI = 3.14;
+
+    public static int sum(int... numbers) {
+        int sum = 0;
+        for (int number : numbers) {
+            sum += number;
+        }
+        return sum;
+    }
+
+    public static double length(double radius) {
+        return 2 * PI * radius;
+    }
+
+    public static double area(double radius) {
+        return PI * radius * radius;
+    }
+}
